@@ -15,9 +15,15 @@
 _GDIPlus_Startup ()
 
 
-$image = _GDIPlus_ImageLoadFromFile(FileReadLine(@ScriptDir & "\test.txt", 1))
+$path = FileReadLine(@ScriptDir & "\test.txt", 1)
+;$path = '"' & $path & '"'
+;MsgBox(16, "Found", $path)
+;Sleep(1000)
+
+$image = _GDIPlus_ImageLoadFromFile($path)
+
 If @error Then
-    MsgBox(16, "Error", "Does the text file exist?")
+    MsgBox(16, "Error", "Does the image file exist? " & $path)
     Exit 1
  EndIf
 
