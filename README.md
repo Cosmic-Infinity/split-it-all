@@ -1,12 +1,12 @@
 # split-it-all
 
-It was a dark and stormy night. In a room humid with sweat, temperature reached 29C. The night slipped from 3rd to 4th, it was March of 2022, Friday. I had school the other day, and yet, I was up all night trying to extract images from this japanese VN.
+It was a dark and stormy night. In a room humid with sweat, temperature reached 29°C. The night slipped from 3rd to 4th, it was March of 2022, Friday. I had school the other day, and yet, I was up all night trying to extract images from this japanese VN.
 
-This was a curious case. After somehow extracting the the files from this absurd `.arc` format, I was at a loss. Each animations, as it seemed, was a long image file with each frame placed side to side. Each frame measuring `960` pixels width.
-I really wanted those animations bad. But  manually cutting up each frame perfectly was near about impossible. So, I did what every self proclaimed programmer would do. I started writing scripts to automate the process.
+This was a curious case. After somehow extracting the the files from this absurd `.arc` format, I was at a loss. Each animations, as it seemed, was a long image file with each animation frame placed side to side. Each frame measuring `960` pixels width.
+I wanted those animations bad. But  manually cutting up each frame perfectly was near about impossible. So, I did what every self proclaimed programmer would do. I whipped up a script to automate the process.
 
 ## The Journey (not worth reading. this is a note to self)
-This project is a culmination of a lot of things. Call it stubbornness, or overconfidence, I was sure it was just a matter of an hour at most. "1 or 2 am at most", I thought, and having compiled a few scripts in Autoit before, I got started.
+This project is a culmination of a lot of things. Call it stubbornness, or overconfidence, I was sure it was just a matter of an hour. "1 or 2 am at most", I thought, and having compiled a few scripts in Autoit before, I got started.
 
 🔴 Batch files are used for automation. Maybe I can write something up? (I knew 0 thing about batch scripting)
 
@@ -18,6 +18,7 @@ This project is a culmination of a lot of things. Call it stubbornness, or overc
 
 
 🔵 Fine I can pass some arguments into it's cli via the batch file.
+
 🟣 So I have to mention the number of splits I want, but... batch files can't process image. I need to read the image width, and find the number of splits. And, I can't write python 🥲
 
 🟤 Well, Autoit it is then. I should read the image, find possible splits, and then pass that information to the batch file which will then pass that to split.py
@@ -27,7 +28,7 @@ This project is a culmination of a lot of things. Call it stubbornness, or overc
 ⚪ So there I was. Hours in and a project with a million pieces.
 
 
-## How it be?
+## How it works
 
 1. User Drag n' Drops an image to `START.bat`
 <p align="center">
@@ -102,6 +103,26 @@ This project is a culmination of a lot of things. Call it stubbornness, or overc
 </tr>
 </table>
 
+## Run/Compile from source
+ 
+> ***By default the size of each horizontal split is 960 pixel***
 
+`Run :` You'll need [Autoit](https://www.autoitscript.com/site/autoit/downloads/) runtime and [Python](https://www.python.org/downloads/) installed to use the scripts directly from code. Drag and drop the require image to `START.bat` to use it. Launching the batch files directly do nothing.
+
+`Compile :` *Autoit* provides a direct tool to convert to .exe and you may use *pyinstaller* to convert the python script to an .exe as well. The batch files run directly.
+
+**NOTE:** I feel like I need to say it every time, but Windows likes to flag almost everything I write as virus. No I am not a malware author. The code is open for you to inspect. Yes, it is a false positive. Yes, it's probably because I don't have a digital certificate.
+
+
+## Released Packages
+
+The package present in the release contains all the scripts in a runnable format, i.e. as `.exe` or `.bat`.
+> ***`width.exe` has hard coded size of horizontal split set to 960 pixel***
+
+and you cannot change that from the execuatble. If you plan to use it for other sizes, I recommend downloading and recompiling `width.au3` with your own custom width value.
+
+<p align="center">
+https://user-images.githubusercontent.com/64971616/229310728-e2d810d6-005d-4a6c-b345-9ca0d7ef5a75.gif
+</p>
 
 
