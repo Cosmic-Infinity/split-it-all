@@ -122,6 +122,7 @@ The package present in the release contains all the scripts in a runnable format
 and you cannot change that from the execuatble. If you plan to use it for other sizes, I recommend downloading and recompiling `width.au3` with your own custom width value.
 
 <p align="center">
+ 
  ![in-action](https://user-images.githubusercontent.com/64971616/229310834-c90cdcd0-07d0-4e4f-9ff3-218a5e07a646.gif)
 </p>
 
