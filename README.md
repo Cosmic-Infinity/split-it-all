@@ -49,10 +49,29 @@
 
 
 ## Algorithm flow
-<p align="center">
+<table align="center">
+<tr>
+<th><p align="center">
 <br/><img width="352" alt="Screenshot 2023-04-01 183234" src="https://user-images.githubusercontent.com/64971616/229291070-74e2a630-490a-490c-8b44-eed44c508e8e.png">
-</p>
+</p></th>
 
+<th align="left">
+
+1. Input image drag n' drop.
+
+2. Renamed file location paased.
+
+3. Passed new folder location through a text file.
+
+4. Returned split count through the text file.
+
+5. Passed image location and split count.
+
+6. Output files generated.
+
+</th>
+</tr>
+</table>
 
 
 
