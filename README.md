@@ -2,8 +2,8 @@
 
 It was a dark and stormy night. In a room humid with sweat, temperature reached 29°C. The night slipped from 3rd to 4th, it was March of 2022, Friday. I had school the other day, and yet, I was up all night trying to extract images from this japanese VN.
 
-This was a curious case. After somehow extracting the the files from this absurd `.arc` format, I was at a loss. Each animations, as it seemed, was a long image file with each animation frame placed side to side. Each frame measuring `960` pixels width.
-I wanted those animations bad. But  manually cutting up each frame perfectly was near about impossible. So, I did what every self proclaimed programmer would do. I whipped up a script to automate the process.
+This was a curious case. After somehow extracting the the files from this absurd `.arc` format, I was at a loss. Each animations, as it seemed, was a long image file with each animation frame placed side to side. Each frame measuring `960 pixels` width.
+I wanted those animations bad. But  manually cutting up each frame perfectly was near about impossible. So, I did what every self proclaimed programmer would. I considered automating it all with code.
 
 ## The Journey (not worth reading. this is a note to self)
 This project is a culmination of a lot of things. Call it stubbornness, or overconfidence, I was sure it was just a matter of an hour. "1 or 2 am at most", I thought, and having compiled a few scripts in Autoit before, I got started.
@@ -15,7 +15,6 @@ This project is a culmination of a lot of things. Call it stubbornness, or overc
 🟡 But then how do it split it? Batch files cannot process image. I need something else
 
 🟢 Okay, I found this split-image project on github. How do I use it? Ooooooo it's in python (All I know about Python is that it's procedure oriented)
-
 
 🔵 Fine I can pass some arguments into it's cli via the batch file.
 
