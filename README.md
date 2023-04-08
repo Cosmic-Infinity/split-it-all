@@ -2,7 +2,7 @@
 
 It was a dark and stormy night. In a room humid with sweat, temperature reached 29°C. The night slipped from 3rd to 4th, it was March of 2022, Friday. I had school the other day, and yet, I was up all night trying to extract images from this japanese VN.
 
-This was a curious case. After somehow extracting the the files from this absurd `.arc` format, I was at a loss. Each animations, as it seemed, was a long image file with each animation frame placed side to side. Each frame measuring `960 pixels` width.
+This was a curious case. After somehow extracting the the files from this absurd `.arc` format, I was at a loss. Each animations, as it seemed, was a long image file with each animation frame placed side to side. Each frame measuring `960 pixels` wide.
 I wanted those animations bad. But  manually cutting up each frame perfectly was near about impossible. So, I did what every self proclaimed programmer would. I considered automating it all with code.
 
 ## The Journey (not worth reading. this is a note to self)
@@ -35,7 +35,7 @@ This project is a culmination of a lot of things. Call it stubbornness, or overc
 </p>
 <br/>
 
-2. `STRAT.bat` renames the file to replace space with underscore (Space causes issues while handling image in autoit). And passes it to `split.bat`.
+2. `STRAT.bat` renames the file to replace space with underscore (space causes issues while handling image in autoit). And passes it to `split.bat`.
 <p align="center">
 <img width="312" alt="Pass renamed image to split.bat" src="https://user-images.githubusercontent.com/64971616/229288763-73675e20-46dc-4b30-81d5-cc56012a9316.png">
 </p>
@@ -117,18 +117,18 @@ This project is a culmination of a lot of things. Call it stubbornness, or overc
 
 `Run :` You'll need [Autoit](https://www.autoitscript.com/site/autoit/downloads/) runtime and [Python](https://www.python.org/downloads/) installed to use the scripts directly from code. Drag and drop the require image to `START.bat` to use it. Launching the batch files directly do nothing.
 
-`Compile :` *Autoit* provides a direct tool to convert to .exe and you may use *pyinstaller* to convert the python script to an .exe as well. The batch files run directly.
+`Compile :` *Autoit* provides a direct tool to convert to .exe and you may use *pyinstaller* to convert the python script to an .exe as well. The batch files need not be modified.
 
 
 
 ## Released Packages
 
-**NOTE:** I feel like I need to say it every time, but Windows likes to flag almost everything I write as virus. No I am not a malware author. The code is open for you to inspect. Yes, it is a false positive. Yes, it's probably because I don't have a digital certificate.
+**NOTE:** I feel like I need to say it every time, but Windows likes to flag almost everything I write as virus. No, I am not a malware author. The code is open for you to inspect. Yes, it is a false positive. Yes, it's probably because I don't have a digital certificate.
 
 The package present in the release contains all the scripts in a runnable format, i.e. as `.exe` or `.bat`.
 > ***`width.exe` has hard coded size of horizontal split set to 960 pixel***
 
-and you cannot change that from the execuatble. If you plan to use it for other sizes, I recommend downloading and recompiling `width.au3` with your own custom width value.
+and you cannot change that from the execuatble. If you plan to use it for other sizes, I recommend downloading and separately recompiling `width.au3` with your own custom width value.
 
 <p align="center">
  
