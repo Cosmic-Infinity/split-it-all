@@ -59,7 +59,7 @@ This project is a culmination of a lot of things. Call it stubbornness, or overc
 </p>
 <br/>
 
-6. `width.au3` reads the text file to get the location of the image. It then calculates the number of horizontal splits it can perform based on the split width hardcoded in the script. It then writes that number in the first line of the text file.
+6. `width.au3` reads the text file to get the location of the image. It then calculates the number of horizontal splits it can perform based on the split width hardcoded in the script. It then writes that number in the first line of the text file. Control is then returned to `split.bat`
 <p align="center">
 <img width="272" alt="calculating possible splits" src="https://user-images.githubusercontent.com/64971616/229289488-6095f86c-0148-48e5-96b6-b3e433184351.png">
 <br/> Vertical splits are NOT performed as it was not required for my use case <br/>
@@ -75,7 +75,7 @@ This project is a culmination of a lot of things. Call it stubbornness, or overc
 
 8. `split.py` can perform both horizontal and vertical splitting. Bases on requirement, it horizontally splits the image.
 <p align="center">
-<img width="382" alt="Images are split and placed in folder" src="https://user-images.githubusercontent.com/64971616/229290129-3c2afcff-895a-4560-a008-80ebcada4137.png">
+ <img width="382" alt="Images are split and placed in folder" src="https://user-images.githubusercontent.com/64971616/229290129-3c2afcff-895a-4560-a008-80ebcada4137.png">
 </p>
 <br/>
 
@@ -113,7 +113,7 @@ This project is a culmination of a lot of things. Call it stubbornness, or overc
 
 ## Run/Compile from source
  
-> ***By default the size of each horizontal split is 960 pixel***
+> ***By default the size of each horizontal split is 960 pixel. There is no vertical splits.***
 
 `Run :` You'll need [Autoit](https://www.autoitscript.com/site/autoit/downloads/) runtime and [Python](https://www.python.org/downloads/) installed to use the scripts directly from code. Drag and drop the require image to `START.bat` to use it. Launching the batch files directly do nothing.
 
@@ -123,7 +123,7 @@ This project is a culmination of a lot of things. Call it stubbornness, or overc
 
 ## Released Packages
 
-**NOTE:** I feel like I need to say it every time, but Windows likes to flag almost everything I write as virus. No, I am not a malware author. The code is open for you to inspect. Yes, it is a false positive. Yes, it's probably because I don't have a digital certificate.
+**NOTE:** I feel like I need to say it every time, but Windows likes to flag almost everything I write as virus. No, I am not a malware author. The code is open for you to inspect. Yes, it is a false positive.
 
 The package present in the release contains all the scripts in a runnable format, i.e. as `.exe` or `.bat`.
 > ***`width.exe` has hard coded size of horizontal split set to 960 pixel***
