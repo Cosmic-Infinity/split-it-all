@@ -35,7 +35,7 @@ This project is a culmination of a lot of things. Call it stubbornness, or overc
 </p>
 <br/>
 
-2. `STRAT.bat` renames the file to replace space with underscore (space causes issues while handling image in autoit). And passes it to `split.bat`.
+2. `STRAT.bat` renames the file to replace space with underscore (space causes issues while handling image in autoit). And passes control over to `split.bat`.
 <p align="center">
 <img width="312" alt="Pass renamed image to split.bat" src="https://user-images.githubusercontent.com/64971616/229288763-73675e20-46dc-4b30-81d5-cc56012a9316.png">
 </p>
