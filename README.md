@@ -14,7 +14,7 @@ This project is a culmination of a lot of things. Call it stubbornness, or overc
 
 🟡 But then how do it split it? Batch files cannot process image. I need something else
 
-🟢 Okay, I found this split-image project on github. How do I use it? Ooooooo it's in python (All I know about Python is that it's procedure oriented)
+🟢 Okay, I found this split-image project on github. How do I use it? Oooookay it's in python (why does it have to be python)
 
 🔵 Fine I can pass some arguments into it's cli via the batch file.
 
